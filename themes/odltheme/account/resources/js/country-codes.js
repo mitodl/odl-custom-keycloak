@@ -250,12 +250,15 @@
         "ZW": "Zimbabwe",
         "AX": "Åland Islands"
     };
-    // let regionNames = new Intl.DisplayNames(['en'], {type: 'region'});
     var selectList = document.getElementById("user.attributes.country");
+    var currentCountry = document.currentScript.getAttribute('countryCode');
     for (const [key, value] of Object.entries(countryListAlpha2)) {
         var option = document.createElement("option");
         option.value = key;
         option.text = value;
         selectList.appendChild(option);
+        if (currentCountry == key) {
+            selectList.value = key;
+        } 
     }
 })();

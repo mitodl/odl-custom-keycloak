@@ -1,8 +1,6 @@
 <#import "template.ftl" as layout>
 <@layout.mainLayout active='account' bodyClass='user'; section>
 
-    <script src="${url.resourcesPath}/js/country-codes.js" type="text/javascript" defer></script>
-
     <div class="row">
         <div class="col-md-10">
             <h2>${msg("editAccountHtmlTitle")}</h2>
@@ -61,7 +59,6 @@
             <div class="${properties.kcLabelWrapperClass!}">
                 <label for="user.attributes.country" class="${properties.kcLabelClass!}">Country</label>
             </div>
-
             <div class="${properties.kcInputWrapperClass!}">
                 <select id="user.attributes.country" name="user.attributes.country">
                 </select>
@@ -78,5 +75,7 @@
             </div>
         </div>
     </form>
+
+    <script src="${url.resourcesPath}/js/country-codes.js" type="text/javascript" countryCode="${(account.attributes.country!'')}" defer></script>
 
 </@layout.mainLayout>
