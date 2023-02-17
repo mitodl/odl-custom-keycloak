@@ -1,0 +1,8 @@
+FROM quay.io/keycloak/keycloak:20.0.3-0
+
+COPY themes/ /opt/keycloak/themes/
+
+# All env vars for hosted instances should be specified in 
+# .env in the ol-infrastructure repo.
+
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
