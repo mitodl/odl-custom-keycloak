@@ -1,4 +1,7 @@
-FROM quay.io/keycloak/keycloak:20.0.3-0
+# Build with something like: 
+#   docker build -f ./Dockerfile.hosted --build-arg UPSTREAM_TAG=$(cat .keycloak_upstream_tag) --platform=linux/amd64 .
+ARG UPSTREAM_TAG="latest"
+FROM quay.io/keycloak/keycloak:${UPSTREAM_TAG}
 
 COPY themes/ /opt/keycloak/themes/
 
