@@ -5,6 +5,7 @@ FROM quay.io/keycloak/keycloak:${UPSTREAM_TAG}
 
 COPY themes/ /opt/keycloak/themes/
 COPY plugins/*.jar /opt/keycloak/providers/
+RUN /opt/keycloak/bin/kc.sh build
 # All env vars for hosted instances should be specified in 
 # .env in the ol-infrastructure repo.
 
