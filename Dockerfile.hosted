@@ -4,7 +4,7 @@ ARG UPSTREAM_TAG="latest"
 FROM quay.io/keycloak/keycloak:${UPSTREAM_TAG}
 
 COPY themes/ /opt/keycloak/themes/
-COPY **/*.jar /opt/keycloak/providers/
+COPY plugins/*.jar /opt/keycloak/providers/
 # All env vars for hosted instances should be specified in 
 # .env in the ol-infrastructure repo.
 
