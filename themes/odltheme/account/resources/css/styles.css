@@ -1,0 +1,77 @@
+.navbar-pf {
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    min-height: 0;
+}
+
+.navbar-pf .navbar-utility>li>a, .navbar-pf .navbar-utility>li>button {
+    border: solid #2b2b2b;
+    border-width: 0 0 0 1px;
+    padding: 7px 10px;
+    margin: 0;
+    display: block;
+    width: 100%;
+    color: #000 !important;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.editAccountHeader {
+    font-size: 38px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #000;
+}
+
+#editAccountCard {
+    background-color: #fff;
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-bottom-color: #a41e34;
+    padding: 20px 35px 35px 35px;
+    min-height: 400px;
+    box-shadow: -4px 5px 8px 0px rgb(204 204 204 / 80%);
+}
+
+.form-horizontal .control-label {
+    color: #666;
+    font-size: 14px;
+}
+
+.btn-primary {
+    color: #fff;
+    font-size: 18px;
+    padding: 11px 40px;
+    border-radius: 4px;
+    border-width: 1px;
+    transition: .25s !important;
+    font-weight: 600;
+    background-color: #a41e34;
+    border-color: #a41e34;
+    background-image: linear-gradient(to bottom,#d33953 0,#a41e34 100%);
+
+}
+.btn-primary:hover {
+    border-color: #a41e34;
+    background-color: #a41e34;
+}
+.btn-default {
+    font-size: 18px;
+    padding: 11px 40px;
+    border-radius: 4px;
+    border-width: 1px;
+    font-weight: 600;
+    float: right;
+}
+
+.bs-sidebar>ul{
+    list-style: none
+}
+.bs-sidebar>ul>li>a, .active{
+    font-size: 16px;
+    font-weight: 400;
+}
